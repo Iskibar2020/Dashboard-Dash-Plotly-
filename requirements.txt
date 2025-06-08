@@ -5,3 +5,4 @@ geopy
 shapely
 geopandas
 gunicorn
+dash_leaflet
