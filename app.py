@@ -20,4 +20,4 @@ def main():
 if __name__ == '__main__':
     app = main()  # ← THIS FIXES THE ERROR
     port = int(os.environ.get('PORT', 8050))
-    app.run_server(debug=False, host='0.0.0.0', port=port)
+    app.run(debug=False, host='0.0.0.0', port=port)
