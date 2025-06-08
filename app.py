@@ -2,7 +2,7 @@ from dash import Dash
 import layouts
 import callbacks
 import plotly.io as pio
-
+import os
 
 def main():
     # Load template.html for index_string
@@ -18,4 +18,6 @@ def main():
     return app
 
 if __name__ == '__main__':
-    main().run_server(debug=True)
+    app = main()  # ← THIS FIXES THE ERROR
+    port = int(os.environ.get('PORT', 8050))
+    app.run_server(debug=False, host='0.0.0.0', port=port)
