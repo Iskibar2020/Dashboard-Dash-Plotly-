@@ -1,0 +1,151 @@
+/* style.css */
+body {
+  font-family: "Segoe UI", sans-serif; /* Dark text color for contrast */
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #242323;
+  color: white;
+}
+/* Make the map container stand out */
+#boundary-map {
+  border: 3px solid #333;
+  border-radius: 8px;
+}
+
+header {
+  text-align: center; /* center the h1 text */
+  background-color: #525453; /* optional background */
+  padding: 10px; /* spacing inside the header */
+  border-radius: 12px; /* rounded corners */
+  margin: 20px; /* spacing outside the header */
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+header h1 {
+  color: white; /* make text white */
+  margin: 0; /* remove default margin */
+  font-size: 2em; /* adjust size if needed */
+}
+/* Chart card styling */
+.my-chart {
+  background-color: #fafafa;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* DataTable tweaks */
+.dash-table-container .dash-spreadsheet {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+}
+
+.map-section {
+  width: 40vw;
+  float: right;
+  height: 300px;
+}
+
+.charts-section {
+  width: 55vw;
+  float: left;
+}
+
+#bar-chart,
+#pie-chart,
+#scatter-chart,
+#hist-chart,
+#bubble-chart {
+  width: 49%;
+  height: 300px;
+  display: flex;
+  float: left;
+  padding: 5px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-svg {
+  background: #24232314;
+  border-radius: 5px; /* Prevent text selection in SVG */
+}
+
+#bar-chart,
+#scatter-chart {
+  margin-right: 20px;
+}
+#bar-chart,
+#pie-chart,
+.map-section {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#scatter-chart {
+  margin-bottom: 10px;
+}
+
+.dash-table-container .dash-spreadsheet {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 0px;
+}
+
+.dash-debug-menu {
+  display: none; /* Hide the debug menu */
+}
+
+#boundary-map {
+  margin-left: -5px;
+  margin-top: 2px;
+}
+
+#continent-dropdown {
+  float: left;
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+  padding-left: 0px;
+}
+.Select-placeholder {
+  color: white;
+  border: 1px solid #0a0d16;
+  background-color: #525453;
+}
+
+input.dash-input:valid {
+  height: 34px;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid #ffffff;
+  background-color: #525453;
+}
+#search-input::placeholder {
+  color: white !important;
+  opacity: 1;
+}
+#search-button {
+  margin-left: 5px;
+  height: 38px;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid #ffffff;
+  background-color: #525453;
+}
+.Select-placeholder,
+.Select--single > .Select-control .Select-value {
+  color: white !important;
+}
+
+#population-range-slider .rc-slider-track {
+  background-color: #ffffff !important;
+}
+
+#population-range-slider .rc-slider-handle {
+  border-color: #ffffff !important;
+  background-color: #0a0d16 !important;
+}
+
+.dash-debug-menu__icon,
+.dash-debug-menu__outer--closed {
+  display: none;
+}
